@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="tr" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BurakKUTBAY.com Spring Örnek Uygulama</title>
+
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}"/>
+    <script th:src="@{/webjars/jquery/3.3.1-1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Giriş Yapıldı. Hoşgeldiniz, <span th:text="${#authentication.name}"></span>.</h2>
+    <a th:href="@{/logout}" class="btn btn-danger">Çıkış Yapın</a>
+</div>
+
+</body>
+</html>
